@@ -1,20 +1,6 @@
 import heapq
 import math
 import copy
-
-class Path():
-    def __init__(self):
-        self.list = []
-    def get(self):
-        return self.list
-    def add(self,node):
-        self.list.append(node)
-    def end(self):
-        return self.list[-1]
-def print_path(path):
-    for node in path.list:
-        print(node.id,end=',')
-    print("")
     
 class PriorityQueue:
     def __init__(self):
@@ -30,26 +16,24 @@ class PriorityQueue:
 class Frontier():
     def __init__(self):
         self.queue = PriorityQueue()
-        self.set = set()
+        self.openSet = {}
     def set_goal(self,goal):
         self.goal = goal
         
-    def add(self,path,M):
-        cost = path.end().g_cost + path.end().h_cost
-        self.queue.push(path,cost)
-        self.set.add(path)
+    def add(self,node):
+        cost = node.g_cost + node.h_cost
+        self.queue.push(node,cost)
+        #self.set.add({path.end().id:path.end()})
+        self.openSet[node.id] = node
+        #print("g_cost:{},h_cost:{}".format(node.g_cost,node.h_cost))
         #print("add new path,cost=",cost)
         #print_path(path)
         
-    def choice(self,M):
-        path = self.queue.pop()
-        self.set.remove(path)
+    def choice(self):
+        node = self.queue.pop()
+        del self.openSet[node.id]
         
-        return path
-    
-class Explored():
-    def __init__(self):
-        self.set = set()
+        return node
 class Node():
     def __init__(self,id,state,actions,g_cost,h_cost,parent):
         self.id = id
@@ -65,16 +49,17 @@ def Result(node,id,goal,M):
     g_cost = node.g_cost + distance(node.id,id,M)
     h_cost = heuristic_cost_estimate(id,goal,M)
     return Node(id,1,M.roads[id],g_cost,h_cost,node)
-def path_2_answer(path):
-    answer = []
-    for node in path.list:
-        answer.append(node.id)
-    print(answer)
-    return answer
+
 def heuristic_cost_estimate(start,goal,M):
     dist = math.sqrt(math.pow(abs( M.intersections[start][0]- M.intersections[goal][0]),2) + math.pow(abs( M.intersections[start][1]- M.intersections[goal][1]),2))
     return dist
-    
+def reconstruct_path(cameFrom, current):
+    total_path = [current]
+    while current in cameFrom:
+        current = cameFrom[current]
+        total_path.append(current)
+    print("return path:",total_path)
+    return total_path[::-1]  
 def shortest_path(M,start,goal):
     '''
     for key,value in M.intersections.items():
@@ -88,35 +73,44 @@ def shortest_path(M,start,goal):
     node = Node(start,1,M.roads[start],0,heuristic_cost_estimate(start,goal,M),start)
     frontier = Frontier()
     frontier.set_goal(goal)
-    path = Path()
-    path.add(node)
-    frontier.add(path,M)         
+    frontier.add(node)    
     
-    explored = Explored()
+    cameFrom={}
+
+    gScore={}
+    gScore[start] = 0
+    fScore={}
+    fScore[start] = heuristic_cost_estimate(start,goal,M)
+    
+    explored = set()
     
     while frontier.queue.len() > 0:
-        path_choice = frontier.choice(M)#get from frontier
-        s = path_choice.end()
+        cur_node = frontier.choice()#get from frontier
         
-        if s.id == goal:
-            return path_2_answer(path_choice)
+        if cur_node.id == goal:
+            return reconstruct_path(cameFrom,cur_node.id)
         
-        if s.id in explored.set:   #避免多余的搜索
+        if cur_node.id in explored:   #避免多余的搜索
             continue
             
-        explored.set.add(s.id)    #add s to explored
-        #print("explored.set:",explored.set)
+        explored.add(cur_node.id)    #add s to explored
         
+        #print("explored.set:",explored.set) 
         
-        for id in s.actions:
-            if id in explored.set:
+        for neighbor_id in cur_node.actions:
+            if neighbor_id in explored:
                 continue
-            node_new = Result(s,id,goal,M)
-            path_new = copy.deepcopy(path_choice)
-            path_new.add(node_new)
-    
+        
+            tentative_gScore = gScore[cur_node.id] + distance(cur_node.id,neighbor_id,M)
+            
             #if node_new.id not in frontier.set and node_new.id not in explored.set: #add[path+a > Result(s,a)]
-            if node_new.id not in explored.set:
-                frontier.add(path_new,M)    #to frontier
-     ret = []
-     return ret
+            if neighbor_id not in frontier.openSet:
+                node_new = Result(cur_node,neighbor_id,goal,M)
+                frontier.add(node_new)    #to frontier
+            elif tentative_gScore >= gScore[neighbor_id]:
+                continue
+            
+            cameFrom[neighbor_id]=cur_node.id
+            gScore[neighbor_id] = tentative_gScore
+            fScore[neighbor_id] = gScore[neighbor_id] + heuristic_cost_estimate(neighbor_id,goal,M)
+    return False
