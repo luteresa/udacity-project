@@ -20,19 +20,7 @@ The goals / steps of this project are the following:
 ---
 
 ### Reflection
-## tools i will use
 
-color selection, 
-
-region of interest selection, 
-
-grayscaling, 
-
-Gaussian smoothing, 
-
-Canny Edge Detection 
- 
-Hough Tranform line detection. 
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
