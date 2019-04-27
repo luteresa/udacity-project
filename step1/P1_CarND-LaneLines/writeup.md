@@ -7,15 +7,7 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
----
-
 ## tools i will use
-
----
 
 color selection, 
 
@@ -35,7 +27,7 @@ Hough Tranform line detection.
 
 
 
-### 1. Describe my pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Describe about the pipeline. 
 
 My pipeline consisted of 5 steps. 
 
@@ -50,6 +42,8 @@ fourth, define a polygon to mask
 fifh,  Hough Tranform  line detection
 
 sixth,　draw lane line
+
+### As part of the description, explain how you modified the draw_lines() function.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by lines_classify2()
 
@@ -72,21 +66,15 @@ at last, draw two lines(left_lien and right_line)
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when vechle turn around;
+One potential shortcoming is that the lane line detection is inaccurate when the vehicle turn around;
 
-Another shortcoming could be ...
+Another shortcoming could be that the lane line detection  miss when the segment is too short;
 
 
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to update the draw_lines()
 
-Another potential improvement could be to ...
 
-pip install moviepy
-
-ERROR: Cannot uninstall 'imageio'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
-
-pip install moviepy --upgrade --ignore-install imageio
