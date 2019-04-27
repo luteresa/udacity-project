@@ -35,32 +35,44 @@ Hough Tranform line detection.
 
 
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Describe my pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps. 
 
 First, I converted the images to grayscale
 
-Second, Canny Edge Detection 
+Second, gaussian blue for image
 
-third,  Hough Tranform  line detection
+third, Canny Edge Detection 
 
-fourth,　draw lane line
+fourth, define a polygon to mask
 
+fifh,  Hough Tranform  line detection
 
+sixth,　draw lane line
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by lines_classify2()
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+in lines_classify2(img,lines), i follow steps below:
 
-![alt text][image1]
+step 1:classify lines by the sign of line's slope(for left lines and right lines);
+
+step 2: calclulate average slope of left_line and right_line;
+
+step 3: filter some error slope;
+
+step 4:calcluate average slope again(removed error slope);
+
+step 5:calcluate left_bottom point of left_line and right_bottom point of right_line
+
+at last, draw two lines(left_lien and right_line)
 
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when vechle turn around;
 
 Another shortcoming could be ...
 
