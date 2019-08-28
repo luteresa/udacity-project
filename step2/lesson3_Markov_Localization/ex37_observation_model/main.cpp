@@ -44,7 +44,7 @@ int main() {
                                                pseudo_ranges, distance_max, 
                                                observation_stdev);
     //print to stdout
-    std::cout << observation_prob << std::endl; 
+    std::cout << "observation_prob:"<<observation_prob << std::endl; 
   }      
 
   return 0;
