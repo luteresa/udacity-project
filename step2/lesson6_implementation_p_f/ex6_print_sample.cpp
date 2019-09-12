@@ -54,7 +54,7 @@ void printSamples(double gps_x, double gps_y, double theta)
 	normal_distribution<double> dist_y(gps_y, std_y);
 	normal_distribution<double> dist_theta(theta, std_theta);
 
-	for (int i = 0; i < 3; ++i) {
+	for (int i = 0; i < 30; ++i) {
 	double sample_x, sample_y, sample_theta;
 
 	// TODO: Sample from these normal distributions like this: 
