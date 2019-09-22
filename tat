@@ -1,0 +1,365 @@
+[33mcommit 2d660a690f152904685668517cf21b33afb6adb1[m
+Author: leon <luteresa@163.com>
+Date:   Fri Sep 20 20:27:34 2019 +0800
+
+    add A star
+
+[33mcommit 0c3934aff77879c441892ae63ccb1b63510f3b0b[m
+Author: luteresa <luteresa@163.com>
+Date:   Fri Sep 20 06:46:31 2019 +0800
+
+    add
+
+[33mcommit 32d93b81d316620a456cda13dbd4605615180806[m
+Author: leon <luteresa@163.com>
+Date:   Thu Sep 12 19:09:17 2019 +0800
+
+    add partilce filter
+
+[33mcommit 9fb1097e86f99042adaa73581e3da52623067683[m
+Author: leon <luteresa@163.com>
+Date:   Sat Sep 7 17:47:19 2019 +0800
+
+    add particle filters
+
+[33mcommit b15ebdc3f5846dce728aacc459824f945a49ce36[m
+Author: luteresa@163.com <luteresa@163.com>
+Date:   Thu Aug 29 00:13:55 2019 +0800
+
+    markov location
+
+[33mcommit e30807032e19bea3b21adebe98b4755bec1dc016[m
+Author: leon <luteresa@163.com>
+Date:   Sat Aug 24 20:30:49 2019 +0800
+
+    add step3 for selfdrving
+
+[33mcommit a357e1daa7fcbb15fc15c6c5548cfd31c489eb91[m
+Author: leon <luteresa@163.com>
+Date:   Fri Jul 26 19:59:56 2019 +0800
+
+    add ekf
+
+[33mcommit ec9fb2044ca6d67c5b7ac49cd21627c7c28fe980[m
+Author: leon <luteresa@163.com>
+Date:   Wed Jul 24 20:11:16 2019 +0800
+
+    add km_extended
+
+[33mcommit ab9f3eca6d65d3943b9ca126dbb0083db3e5994d[m
+Author: leon <luteresa@163.com>
+Date:   Mon Jul 22 20:10:30 2019 +0800
+
+    update for kalman filters
+
+[33mcommit 0b8f05a44ba40a13aa9950b8add9b643c374cfc4[m
+Author: leon <luteresa@163.com>
+Date:   Mon Jul 22 20:07:46 2019 +0800
+
+    update for kalman fileter
+
+[33mcommit 7897f41cf1f2655bfd0660335f1176c40680709d[m
+Author: leon <luteresa@163.com>
+Date:   Mon Jul 15 14:47:30 2019 +0800
+
+    调整目录
+
+[33mcommit 628332177e9f2fe591f9115c9903c26a02760691[m
+Author: leon <luteresa@163.com>
+Date:   Mon Jul 15 14:41:02 2019 +0800
+
+    add papers and behavioral cloning
+
+[33mcommit 9b1c6cb84a0de36e92fc5cdf26d814b106c8122f[m
+Author: luteresa@163.com <luteresa@163.com>
+Date:   Mon Jul 15 00:17:46 2019 +0800
+
+    add kalman filter
+
+[33mcommit da034dc1cdfebef76fa1528aef8e9b659ab90d86[m
+Merge: 6ae4551 da8b051
+Author: leon <luteresa@163.com>
+Date:   Thu Jul 4 08:59:56 2019 +0800
+
+    merge ok.Merge branch 'master' of https://github.com/luteresa/udacity-projectOkddd# 请输入一个提交信息以解释此合并的必要性，尤其是将一个更新后的上游分支# 合并到主题分支。## 以 '#' 开头的行将被忽略，而且空提交说明将会终止提交。
+
+[33mcommit da8b0512b18a77c42ec406dd10ab4def8607f30a[m
+Author: yuyunbo <luteresa@163.com>
+Date:   Wed Jul 3 23:45:52 2019 +0800
+
+    add keras environment,
+
+[33mcommit 647b68c9c306fdba9c821714c933f3009f740d5e[m
+Author: yuyunbo <luteresa@163.com>
+Date:   Wed Jul 3 23:33:41 2019 +0800
+
+    update for note
+
+[33mcommit 6ae4551e71be4caaa34fd616c1560e48e5d2093c[m
+Author: leon <luteresa@163.com>
+Date:   Wed Jul 3 20:14:33 2019 +0800
+
+    add kera
+
+[33mcommit 29f0801f5825e778b368d968cb487f1d864cf9ba[m
+Author: yuyunbo <luteresa@163.com>
+Date:   Tue Jul 2 22:02:25 2019 +0800
+
+    update for transfer learning
+
+[33mcommit 977c27b500a9afce4f15a017d1885789a0d6d7d8[m
+Author: leon <luteresa@163.com>
+Date:   Tue Jul 2 17:54:32 2019 +0800
+
+    update transfer learning note
+
+[33mcommit 962ca819a67c5d0d7f22abd00ff8824b3877fb2c[m
+Author: yuyunbo <luteresa@163.com>
+Date:   Mon Jul 1 00:51:29 2019 +0800
+
+    add transfer_learning
+
+[33mcommit 7ab5478da4b750675cb57918fc684ec4f39e07f0[m
+Author: leon <luteresa@163.com>
+Date:   Sat Jun 29 17:50:09 2019 +0800
+
+    add note
+
+[33mcommit d46756f4fd262fdc8d72682c9af23b6c1bf97945[m
+Author: leon <luteresa@163.com>
+Date:   Thu Jun 20 19:44:56 2019 +0800
+
+    add LeNet for traffic signs
+
+[33mcommit c8a07633c468e80928ada2401870a4b305a9cb96[m
+Author: leon <luteresa@163.com>
+Date:   Tue Jun 18 10:52:44 2019 +0800
+
+    删除多余文件
+
+[33mcommit 8338ca71769ca7d7e8b8fc477a09df90c65e183d[m
+Author: leon <luteresa@163.com>
+Date:   Tue Jun 18 10:40:41 2019 +0800
+
+    add cnn
+
+[33mcommit 966e342833af4470a84ad4020f1ff4447e81c69a[m
+Author: yuyunbo <luteresa@163.com>
+Date:   Sun Jun 16 23:53:02 2019 +0800
+
+    add cnn
+
+[33mcommit c73e940803a9f3ac64d620528189c0749b48f6fa[m
+Author: leon <luteresa@163.com>
+Date:   Tue Jun 4 20:10:51 2019 +0800
+
+    add notMnist
+
+[33mcommit a77590a9766340ab04cd71b2157598f97415fc90[m
+Author: leon <luteresa@163.com>
+Date:   Mon Jun 3 16:54:06 2019 +0800
+
+    add tensorflow
+
+[33mcommit b8e050a1c6fe6f2c8ac6092dfc5995ddc7e966e0[m
+Author: leon <luteresa@163.com>
+Date:   Fri May 31 17:49:59 2019 +0800
+
+    update for deep learning
+
+[33mcommit 418e903bdfec1bfd6ccdc9bd8a05e498ec9e43e9[m
+Author: leon <luteresa@163.com>
+Date:   Thu May 30 17:54:00 2019 +0800
+
+    add neural network
+
+[33mcommit 6e1cb697b60ca8e16bd7bcbf146b6172beae7a67[m
+Author: leon <luteresa@163.com>
+Date:   Fri May 24 17:46:08 2019 +0800
+
+    update for notes of computer vision
+
+[33mcommit 5b3428f0172d8452e8b593fb96ddbbd0aef97e1d[m
+Author: luteresa@163.com <luteresa@163.com>
+Date:   Wed May 22 23:34:25 2019 +0800
+
+    update notes for Computer Vision
+
+[33mcommit 464451651c3b9f06aa2f391a128ad7300ce2e9a4[m
+Author: luteresa@163.com <luteresa@163.com>
+Date:   Wed May 22 00:02:52 2019 +0800
+
+    review lesson8
+
+[33mcommit ba3073771539b990099df4891a813e784b0b4e48[m
+Author: leon <luteresa@163.com>
+Date:   Tue May 21 17:42:43 2019 +0800
+
+    添加视觉部分复习笔记
+
+[33mcommit bc2319a16a6e3d06e95044ebbb3f4bf45f67565a[m
+Author: leon <luteresa@163.com>
+Date:   Mon May 20 11:35:56 2019 +0800
+
+    添加高级视觉，车道线检测项目
+
+[33mcommit b77524a9fac3850123ca62b564496a5e07d2fd19[m
+Author: luteresa@163.com <luteresa@163.com>
+Date:   Sun May 19 21:48:05 2019 +0800
+
+    add all tools for Advanced Lane Line Finding
+
+[33mcommit 0482e2946d3180f86fe44248b757098f4274dd82[m
+Author: luteresa@163.com <luteresa@163.com>
+Date:   Thu May 9 00:26:26 2019 +0800
+
+    添加高级视觉处理笔记
+
+[33mcommit 17e479a4f4c787a7731e7dbb1f69d7b25eaf5267[m
+Author: luteresa@163.com <luteresa@163.com>
+Date:   Sat Apr 27 23:18:53 2019 +0800
+
+    update for writeup.md
+
+[33mcommit 3c5aa21a84ec97f90468c7204c26e78617f1ac7a[m
+Author: luteresa@163.com <luteresa@163.com>
+Date:   Sat Apr 27 22:44:08 2019 +0800
+
+    通过基本要求
+
+[33mcommit bc7ce06955be749153853e8eb7a1ff35693130ea[m
+Author: leon <luteresa@163.com>
+Date:   Thu Apr 25 20:26:57 2019 +0800
+
+    实现线段链接
+
+[33mcommit 21beee05e1dd10b583c9138be31554da2024f87e[m
+Author: luteresa@163.com <luteresa@163.com>
+Date:   Wed Apr 24 23:27:53 2019 +0800
+
+    初步实现车道线检测，效果需要进一步改进
+
+[33mcommit 6a4560f48b7b50833e0c27d0eeb2656543231a3d[m
+Author: leon <luteresa@163.com>
+Date:   Wed Apr 24 18:00:19 2019 +0800
+
+    update p1
+
+[33mcommit 49f5401bfb1514317827a450e2fb55f526bc53be[m
+Author: luteresa@163.com <luteresa@163.com>
+Date:   Tue Apr 23 23:48:57 2019 +0800
+
+    start lane lines project
+
+[33mcommit c04fa1bcbf7459ac044b4c3e9853766db82d2a86[m
+Author: leon <luteresa@163.com>
+Date:   Tue Apr 23 15:04:31 2019 +0800
+
+    modify writeup.md
+
+[33mcommit c5e4be63c4ca9fdd0aab8f30372fa4bd00a2db4b[m
+Author: leon <luteresa@163.com>
+Date:   Tue Apr 23 14:58:06 2019 +0800
+
+    add writeup.md
+
+[33mcommit c0a66ad19ed3648c23846eb5bbf0923fb4b56177[m
+Author: leon <luteresa@163.com>
+Date:   Mon Apr 22 13:38:25 2019 +0800
+
+    添加项目1，检测车道线工程
+
+[33mcommit fb7a0a67d35204b5a4e815f723a99bf5d0639fa9[m
+Author: leon <luteresa@163.com>
+Date:   Mon Apr 22 10:46:34 2019 +0800
+
+    update README.md for markdown formats
+
+[33mcommit 5328ab8f52e0c9d3d385fc3a69aa83b9472fc5bc[m
+Author: leon <luteresa@163.com>
+Date:   Wed Apr 17 16:50:58 2019 +0800
+
+    学习计划文档
+
+[33mcommit 554a4483dcd5f4e7102f8f2a0d5ad244442211a4[m
+Author: leon.yu <luteresa@163.com>
+Date:   Tue Apr 16 20:29:47 2019 +0800
+
+    Update README.md
+
+[33mcommit 69c43f1908e86bd7cf005fa66446d170131206d6[m
+Author: leon.yu <luteresa@163.com>
+Date:   Tue Apr 16 20:29:29 2019 +0800
+
+    Update README.md
+
+[33mcommit 1a50453db3cb6d9f0193930d67e7a1c3abd12d4a[m
+Author: leon.yu <luteresa@163.com>
+Date:   Tue Apr 16 20:29:07 2019 +0800
+
+    Update README.md
+
+[33mcommit 805036f22d8e31b40e31402851ad2dbbc53a0bff[m
+Author: leon <luteresa@163.com>
+Date:   Tue Apr 16 20:27:17 2019 +0800
+
+    开始学习无人驾驶第1阶段内容
+
+[33mcommit 79d4214a3b6599b26b69ed9e95c586f96434547d[m
+Merge: 45ffa73 93b5225
+Author: leon.yu <luteresa@163.com>
+Date:   Sun Feb 24 11:52:55 2019 +0800
+
+    Merge branch 'master' of https://github.com/luteresa/udacity-project
+
+[33mcommit 45ffa73974ca69af8eebeaeadb9bca8cc6eeef1b[m
+Author: leon.yu <luteresa@163.com>
+Date:   Sun Feb 24 11:52:50 2019 +0800
+
+    Create Traffic_Light_Classifier-zh.ipynb
+    
+    添加交通灯分类项目代码
+
+[33mcommit 93b5225a56f0b89a1baa0ba6bbace3e87a95da49[m
+Author: leon <luteresa@163.com>
+Date:   Tue Feb 12 12:41:41 2019 +0800
+
+    完善A star算法，添加g值比对功能
+
+[33mcommit 3b55d0729c19475747d1feb71f6e73cbe5047c4f[m
+Author: leon.yu <luteresa@163.com>
+Date:   Mon Feb 11 22:51:24 2019 +0800
+
+    Update student_code.py
+    
+    按A*算法改进本项目的实现
+
+[33mcommit 3dc3d57840da97ce762b509dd71cbf27d129d98b[m
+Author: leon <luteresa@163.com>
+Date:   Mon Feb 11 16:11:39 2019 +0800
+
+    add comment
+
+[33mcommit 258c276b3fdb9d77686a2e5b61d758e155dc8455[m
+Author: leon <luteresa@163.com>
+Date:   Mon Feb 11 16:09:04 2019 +0800
+
+    重新命名目录结构
+
+[33mcommit 84d05ade5745aa5b459ec591d82d326919e98e8f[m
+Author: leon <luteresa@163.com>
+Date:   Mon Feb 11 16:07:04 2019 +0800
+
+    添加p5项目，直方图滤波翻译成cpp代码
+
+[33mcommit d8386e308447aeb690f1788c4303da0501273fea[m
+Author: leon <luteresa@163.com>
+Date:   Mon Feb 11 15:59:25 2019 +0800
+
+    add project find optimal path
+
+[33mcommit 27847dea7131df9a9b2129d8609698391ae9e88b[m
+Author: leon.yu <luteresa@163.com>
+Date:   Mon Feb 11 15:20:45 2019 +0800
+
+    Initial commit
