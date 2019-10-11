@@ -58,6 +58,7 @@ int main() {
   /**
    * TODO: initialize priors
    */
+   //初始先验概率，每一个完整滤波周期都会更新priors
   vector <float> priors = initialize_priors(map_size,landmark_positions,position_stdev);
 
   // UNCOMMENT TO SEE THIS STEP OF THE FILTER
@@ -132,7 +133,7 @@ int main() {
     //cout << posteriors[t] <<  "\t" << priors[t] << endl;
 
     // UNCOMMENT TO SEE THIS STEP OF THE FILTER
-    //cout << "----------NORMALIZED---------------" << endl;
+    cout << "----------NORMALIZED---------------" << endl;
 
     /**
      * TODO: update priors
