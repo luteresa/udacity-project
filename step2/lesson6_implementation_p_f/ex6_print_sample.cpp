@@ -55,18 +55,18 @@ void printSamples(double gps_x, double gps_y, double theta)
 	normal_distribution<double> dist_theta(theta, std_theta);
 
 	for (int i = 0; i < 30; ++i) {
-	double sample_x, sample_y, sample_theta;
+		double sample_x, sample_y, sample_theta;
 
-	// TODO: Sample from these normal distributions like this: 
-	//   sample_x = dist_x(gen);
-	//   where "gen" is the random engine initialized earlier.
-	sample_x = dist_x(gen);
-	sample_y = dist_y(gen);
-	sample_theta = dist_theta(gen);
+		// TODO: Sample from these normal distributions like this: 
+		//   sample_x = dist_x(gen);
+		//   where "gen" is the random engine initialized earlier.
+		sample_x = dist_x(gen);
+		sample_y = dist_y(gen);
+		sample_theta = dist_theta(gen);
 
-	// Print your samples to the terminal.
-	std::cout << "Sample " << i + 1 << " " << sample_x << " " << sample_y << " " 
-	<< sample_theta << std::endl;
+		// Print your samples to the terminal.
+		std::cout << "Sample " << i + 1 << ":  " << sample_x << " " << sample_y << " " 
+		<< sample_theta << std::endl;
 	}
 
 	return;
