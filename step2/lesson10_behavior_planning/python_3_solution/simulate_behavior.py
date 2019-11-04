@@ -25,14 +25,18 @@ FRAMES_PER_SECOND = 4
 AMOUNT_OF_ROAD_VISIBLE = 40
 
 def run_simulation(VISUALIZE=True):
+    #创建一条道路
     road = Road(SPEED_LIMIT, TRAFFIC_DENSITY, LANE_SPEEDS, AMOUNT_OF_ROAD_VISIBLE)
+    #添加
     road.populate_traffic()
+    
     ego_config = {
         'speed_limit' : SPEED_LIMIT,
         'num_lanes' : len(LANE_SPEEDS),
         'goal' : GOAL,
         'max_acceleration': MAX_ACCEL
     }
+    #添加无人车
     road.add_ego(2, 0, ego_config)
     timestep = 0
     while road.get_ego().s <= GOAL[0]:
@@ -41,7 +45,8 @@ def run_simulation(VISUALIZE=True):
             if VISUALIZE:
                 print ("Taking too long to reach goal. Go faster!")
                 break
-
+        
+        #更新路况
         road.advance()
         if VISUALIZE:
             print (road)

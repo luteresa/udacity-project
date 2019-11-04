@@ -5,6 +5,10 @@ lane_direction = {"PLCL": 1, "LCL": 1, "LCR": -1, "PLCR": -1}
 class Vehicle(object):
     preferred_buffer = 6 # impacts "keep lane" behavior.
 
+    '''
+    lane:车道,  s:s位置，  v:速度， a:加速度
+    '''
+   
     def __init__(self, lane, s, v, a, state="CS"):
         self.lane = lane
         self.s = s 
@@ -30,6 +34,7 @@ class Vehicle(object):
             vehicle trajectories as values. Trajectories are a list of Vehicle objects representing
             the vehicle at the current timestep and one timestep in the future.
         OUTPUT: The the best (lowest cost) trajectory corresponding to the next ego vehicle state.
+        返回最优轨迹
         """
 
         states = self.successor_states()
@@ -47,6 +52,7 @@ class Vehicle(object):
 
     def successor_states(self):
         """
+        下一个时刻，可以到达的状态
         Provides the possible next states given the current state for the FSM discussed in the course,
         with the exception that lane changes happen instantaneously, so LCL and LCR can only transition back to KL.
         """
@@ -70,6 +76,7 @@ class Vehicle(object):
     def generate_trajectory(self, state, predictions):
         """
         Given a possible next state, generate a trajectory to realize the next state.
+        生成轨迹
         """
         if   state == "CS"  : trajectory = self.constant_speed_trajectory()
         elif state == "KL"  : trajectory = self.keep_lane_trajectory(predictions)
@@ -146,6 +153,7 @@ class Vehicle(object):
     def increment(self, dt=1):
         """
         Sets vehicle position one step ahead.
+        普通车辆往前走一个dt
         """
         self.s = self.position_at(dt)
             
@@ -170,6 +178,7 @@ class Vehicle(object):
         """
         Generates predictions for non-ego vehicles to be used
         in trajectory generation for ego vehicle.
+        包含车辆当前状态和下一个状态
         """
         predictions = []
         for i in range(horizon):

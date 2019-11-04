@@ -22,10 +22,12 @@ class Road(object):
     def get_ego(self):
         return self.vehicles[self.ego_key]
         
+    #按density概率，路上添加恒速车辆
     def populate_traffic(self):
         for lane_num in range(self.num_lanes):
             lane_speed = self.lane_speeds[lane_num]
             iterator = iter(range(self.visible_length))
+            print("iterator",iterator);
             for s in iterator:
                 if random.random() < self.density:
                     vehicle = Vehicle(lane_num, s, lane_speed, 0)
@@ -41,7 +43,9 @@ class Road(object):
         for v_id, v in self.vehicles.items():
             if v_id != self.ego_key:
                 preds = v.generate_predictions()
-                predictions[v_id] = preds
+                print("preds size:,,,",len(preds));
+                predictions[v_id] = preds #储备下一帧，所有车辆可能的位置
+            print("====");
 
         # Choose next state based on predictions and
         # update kinematics/state for all vehicles.
@@ -54,8 +58,10 @@ class Road(object):
 
         self.timestep += 1
 
+    #添加无人驾驶车辆
     def add_ego(self, lane_num, s, config_data):
         to_delete_id = None
+        #若该位置已经有汽车，删除掉
         for v_id, v in self.vehicles.items():
             if v.lane == lane_num and v.s == s:
                 to_delete_id = v_id
