@@ -52,7 +52,7 @@ class Vehicle(object):
 
     def successor_states(self):
         """
-        下一个时刻，可以到达的状态
+        下一个时刻，可以到达的所有状态
         Provides the possible next states given the current state for the FSM discussed in the course,
         with the exception that lane changes happen instantaneously, so LCL and LCR can only transition back to KL.
         """
