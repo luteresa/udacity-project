@@ -13,7 +13,7 @@ double goal_distance_cost(int goal_lane, int intended_lane, int final_lane,
   double cost = 0;
 
   
-  cost = 1 - exp(-2.0*(std::abs(goal_lane - intended_lane - final_lane)/distance_to_goal));
+  cost = 1 - exp(-2.0*(std::abs(2*goal_lane - intended_lane - final_lane)/distance_to_goal));
 
     
   return cost;

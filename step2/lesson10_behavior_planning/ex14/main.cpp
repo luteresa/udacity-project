@@ -9,6 +9,7 @@ int main() {
     
   // Test cases used for grading - do not change.
   double cost;
+  cout << "Current lane:"<<goal_lane << endl;
   cout << "Costs for (intended_lane, final_lane, goal_distance):" << endl;
   cout << "---------------------------------------------------------" << endl;
   cost = goal_distance_cost(goal_lane, 2, 2, 1.0);
