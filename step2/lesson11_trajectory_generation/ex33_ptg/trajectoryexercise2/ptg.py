@@ -61,6 +61,9 @@ def PTG(start_s, start_d, target_vehicle, delta, T, predictions):
             perturbed = perturb_goal(goal_s, goal_d)
             goals.append((perturbed[0], perturbed[1], t))
         all_goals += goals
+        print("length of goals:",len(goals));
+        print("length of all goals:",len(all_goals));
+		
         t += timestep
     
     # find best trajectory
@@ -71,7 +74,7 @@ def PTG(start_s, start_d, target_vehicle, delta, T, predictions):
         d_coefficients = JMT(start_d, d_goal, t)
         trajectories.append(tuple([s_coefficients, d_coefficients, t]))
     
-    best = min(trajectories, key=lambda tr: calculate_cost(tr, target_vehicle, delta, T, predictions, WEIGHTED_COST_FUNCTIONS))
+    best = min(trajectories, key=lambda tr: calculate_cost(tr, target_vehicle, delta, T, predictions, WEIGHTED_COST_FUNCTIONS,verbose=False))
     calculate_cost(best, target_vehicle, delta, T, predictions, WEIGHTED_COST_FUNCTIONS, verbose=True)
     return best
     
@@ -83,6 +86,7 @@ def calculate_cost(trajectory, target_vehicle, delta, goal_t, predictions, cost_
         cost += new_cost
         if verbose:
             print("cost for {} is \t {}".format(cf.__name__, new_cost))
+    print("cost is \t {}".format(cost))
     return cost
 
 def perturb_goal(goal_s, goal_d):

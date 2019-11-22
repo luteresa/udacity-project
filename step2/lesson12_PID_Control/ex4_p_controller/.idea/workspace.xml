@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d6717245-42e4-41b4-b827-a221533059be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../step1/P2_CarND-Advanced-Lane-Lines/set_git.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../../step1/P2_CarND-Advanced-Lane-Lines/set_git.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../step1/lesson23_Extended_Kalman_Filters/ex2_laser_measurements/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../../step1/lesson23_Extended_Kalman_Filters/ex2_laser_measurements/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson11_trajectory_generation/ex33_ptg/trajectoryexercise2/ptg.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson11_trajectory_generation/ex33_ptg/trajectoryexercise2/ptg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex25_determine_probablities/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex25_determine_probablities/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex27_motion_model/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex27_motion_model/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex35_get_pseudo_ranges/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex35_get_pseudo_ranges/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex37_observation_model/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex37_observation_model/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex39_full_filter/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex39_full_filter/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex9_Initialize Priors Function/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex9_Initialize Priors Function/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex9_Initialize Priors Function/a.out.strip" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson3_Markov_Localization/ex9_Initialize Priors Function/a.out.strip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson6_implementation_p_f/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson6_implementation_p_f/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson6_implementation_p_f/ex20_particle_weights/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson6_implementation_p_f/ex20_particle_weights/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson9_prediction/naive_bayes/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson9_prediction/naive_bayes/a.out" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ex4_p_controller$pid_controller.coverage" NAME="pid_controller Coverage Results" MODIFIED="1574420287596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1655140521">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pid_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2160">
+              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="70" />
+    <option name="y" value="35" />
+    <option name="width" value="1562" />
+    <option name="height" value="950" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ex4_p_controller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ex4_p_controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="pid_controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ex4_p_controller" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pid_controller.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.pid_controller" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6717245-42e4-41b4-b827-a221533059be" name="Default Changelist" comment="" />
+      <created>1574420211856</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574420211856</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="70" y="35" width="1562" height="950" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31225035" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37373737" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pid_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2160">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
