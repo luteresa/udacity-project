@@ -48,3 +48,6 @@ modules.order
 # Debug files
 *.dSYM/
 *.su
+step1/lesson11_tensorflow/TensorFlow-Lab/notMNIST.pickle
+step1/lesson11_tensorflow/TensorFlow-Lab/notMNIST_test.zip
+step1/lesson11_tensorflow/TensorFlow-Lab/notMNIST_train.zip
