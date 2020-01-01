@@ -116,21 +116,19 @@ def run_p(robot, tau, n=100, speed=1.0):
     
 robot = Robot()
 robot.set(0, 1, 0)
-robot.set_steering_drift(10./180.*np.pi)
 
 def run(robot, tau_p, tau_d, n=100, speed=1.0):
     x_trajectory = []
     y_trajectory = []
     # TODO: your code here
-    prev_cte = robot.y
-    for i in range(n):
-        cte = robot.y
-        diff_cte = cte - prev_cte
-        prev_cte = cte
-        steer = -tau_p * cte - tau_d * diff_cte
-        robot.move(steer, speed)
-        x_trajectory.append(robot.x)
-        y_trajectory.append(robot.y)
+	prev_cte = cte
+	for i in range(n):
+		cte = robot.y
+		diff_cte = cte - prev_cte
+		steer = -tau_p * cte - tau_d * diff_cte
+		robot.move(steer, speed)
+		x_trajectory.append(robot.x)
+		y_trajectory.append(robot.y)
 		
     return x_trajectory, y_trajectory
     
@@ -140,4 +138,3 @@ n = len(x_trajectory)
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 8))
 ax1.plot(x_trajectory, y_trajectory, 'g', label='PD controller')
 ax1.plot(x_trajectory, np.zeros(n), 'r', label='reference')
-plt.savefig("pd.png")
