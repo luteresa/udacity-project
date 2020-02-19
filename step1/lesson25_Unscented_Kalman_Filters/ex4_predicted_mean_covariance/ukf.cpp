@@ -69,8 +69,8 @@ void UKF::PredictMeanAndCovariance(VectorXd* x_out, MatrixXd* P_out) {
   x.fill(0.0);
   for (int i = 0; i < 2 * n_aug + 1; ++i) {  // iterate over sigma points
     x = x + weights(i) * Xsig_pred.col(i);
-    cout<<"print i="<<i<<endl;
-    cout<<x;
+    //cout<<"print i="<<i<<endl;
+    //cout<<x;
   }
 
   // predict state covariance matrix
