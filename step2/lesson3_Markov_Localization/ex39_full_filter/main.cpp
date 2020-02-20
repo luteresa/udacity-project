@@ -96,16 +96,19 @@ int main() {
       /**
        * TODO: get the motion model probability for each x position
        */
+      //全概率公式
       float motion_prob = motion_model(pseudo_position,movement_per_timestep,priors,map_size,control_stdev);
 
       /**
        * TODO: get pseudo ranges
        */
+      //获得伪距离序列
       vector<float> pseudo_ranges = pseudo_range_estimator(landmark_positions,pseudo_position);
 
       /**
        * TODO: get observation probability
        */
+      //测量更新
       float observation_prob = observation_model(landmark_positions,observations,pseudo_ranges,distance_max,observation_stdev);
 
       /**
