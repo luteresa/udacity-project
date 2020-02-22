@@ -30,7 +30,6 @@ vector<vector<int>> GRID = {
   {_,X,X,X,_,_,_,_,_,_,_,_,_,_,_,_,},
   {X,X,X,_,_,_,_,_,_,_,_,_,_,_,_,_,}};
 
-
 vector<double> START = {0.0,0.0,0.0};
 vector<int> GOAL = {(int)GRID.size()-1, (int)GRID[0].size()-1};
 

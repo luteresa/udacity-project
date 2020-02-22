@@ -1,13 +1,21 @@
 #include <math.h>
+#include <algorithm>
 #include <iostream>
 #include <vector>
 #include "hybrid_breadth_first.h"
-#include <algorithm>
 
 // Initializes HBF
 HBF::HBF() {}
 
 HBF::~HBF() {}
+
+bool HBF::compare_maze_s(const HBF::maze_s &lhs, const HBF::maze_s &rhs) {
+  return lhs.f < rhs.f;
+}
+
+double HBF::heuristic(double x, double y, vector<int> &goal){
+  return fabs(y - goal[0]) + fabs(x - goal[1]); //return grid distance to goal
+}
 
 int HBF::theta_to_stack_number(double theta){
   // Takes an angle (in radians) and returns which "stack" in the 3D 
@@ -47,12 +55,11 @@ vector<HBF::maze_s> HBF::expand(HBF::maze_s &state, vector<int> &goal) {
     double x2 = x + SPEED * cos(theta);
     double y2 = y + SPEED * sin(theta);
     HBF::maze_s state2;
+    state2.f = g2 + heuristic(x2, y2, goal);
     state2.g = g2;
     state2.x = x2;
     state2.y = y2;
     state2.theta = theta2;
-    state2.f = g2 + heuristic(x2,y2,goal);
-
     next_states.push_back(state2);
   }
 
@@ -84,14 +91,6 @@ vector< HBF::maze_s> HBF::reconstruct_path(
   
   return path;
 }
- bool HBF::compare_maze_s(const HBF::maze_s &lhs, const HBF::maze_s &rhs) {
-  return lhs.f < rhs.f;
-}
-
-//启发函数，直接用欧式距离
-double HBF::heuristic(double x, double y, vector<int> &goal){
-  return fabs(y - goal[0]) + fabs(x - goal[1]); //return grid distance to goal
-}
 
 HBF::maze_path HBF::search(vector< vector<int> > &grid, vector<double> &start, 
                            vector<int> &goal) {
@@ -114,8 +113,8 @@ HBF::maze_path HBF::search(vector< vector<int> > &grid, vector<double> &start,
   state.g = g;
   state.x = start[0];
   state.y = start[1];
-  state.theta = theta;
   state.f = g + heuristic(state.x, state.y, goal);
+  state.theta = theta;
 
   closed[stack][idx(state.x)][idx(state.y)] = 1;
   came_from[stack][idx(state.x)][idx(state.y)] = state;
@@ -123,7 +122,7 @@ HBF::maze_path HBF::search(vector< vector<int> > &grid, vector<double> &start,
   vector<maze_s> opened = {state};
   bool finished = false;
   while(!opened.empty()) {
-  	sort(opened.begin(), opened.end(), compare_maze_s);
+    sort(opened.begin(), opened.end(), compare_maze_s);
     maze_s current = opened[0]; //grab first elment
     opened.erase(opened.begin()); //pop first element
 
@@ -141,7 +140,7 @@ HBF::maze_path HBF::search(vector< vector<int> > &grid, vector<double> &start,
       return path;
     }
 
-    vector<maze_s> next_state = expand(current, goal);//扩展多个可运动的方向
+    vector<maze_s> next_state = expand(current, goal);
 
     for(int i = 0; i < next_state.size(); ++i) {
       int g2 = next_state[i].g;
@@ -153,7 +152,7 @@ HBF::maze_path HBF::search(vector< vector<int> > &grid, vector<double> &start,
         // invalid cell
         continue;
       }
-      //stack2范围是多少？
+
       int stack2 = theta_to_stack_number(theta2);
 
       if(closed[stack2][idx(x2)][idx(y2)] == 0 && grid[idx(x2)][idx(y2)] == 0) {

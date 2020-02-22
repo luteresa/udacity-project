@@ -32,6 +32,10 @@ class HBF {
   int theta_to_stack_number(double theta);
 
   int idx(double float_num);
+    
+  double heuristic(double x, double y, vector<int> &goal);
+
+  static bool compare_maze_s(const HBF::maze_s &lhs, const HBF::maze_s &rhs);
 
   vector<maze_s> expand(maze_s &state, vector<int> &goal);
 
@@ -40,10 +44,6 @@ class HBF {
 
   maze_path search(vector<vector<int>> &grid, vector<double> &start, 
                    vector<int> &goal);
-
-  double heuristic(double x, double y, vector<int> &goal);
-
-  static bool compare_maze_s(const HBF::maze_s &lhs, const HBF::maze_s &rhs);
 
  private:
   const int NUM_THETA_CELLS = 90;
