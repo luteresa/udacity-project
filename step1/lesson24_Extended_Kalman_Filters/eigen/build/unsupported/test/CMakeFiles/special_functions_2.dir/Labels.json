@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/leon/work/myHub/udacity-project/step1/lesson24_Extended_Kalman_Filters/eigen/unsupported/test/special_functions.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildUnsupported"
+		],
+		"name" : "special_functions_2"
+	}
+}

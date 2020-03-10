@@ -28,7 +28,7 @@ int HBF::idx(double float_num) {
 }
 
 
-vector<HBF::maze_s> HBF::expand(HBF::maze_s &state) {
+vector<HBF::maze_s> HBF::expand(HBF::maze_s &state, vector<int> &goal) {
   int g = state.g;
   double x = state.x;
   double y = state.y;
@@ -51,6 +51,8 @@ vector<HBF::maze_s> HBF::expand(HBF::maze_s &state) {
     state2.x = x2;
     state2.y = y2;
     state2.theta = theta2;
+    state2.f = g2 + heuristic(x2,y2,goal);
+
     next_states.push_back(state2);
   }
 
@@ -85,6 +87,8 @@ vector< HBF::maze_s> HBF::reconstruct_path(
  bool HBF::compare_maze_s(const HBF::maze_s &lhs, const HBF::maze_s &rhs) {
   return lhs.f < rhs.f;
 }
+
+//启发函数，直接用欧式距离
 double HBF::heuristic(double x, double y, vector<int> &goal){
   return fabs(y - goal[0]) + fabs(x - goal[1]); //return grid distance to goal
 }
@@ -137,7 +141,7 @@ HBF::maze_path HBF::search(vector< vector<int> > &grid, vector<double> &start,
       return path;
     }
 
-    vector<maze_s> next_state = expand(current);
+    vector<maze_s> next_state = expand(current, goal);//扩展多个可运动的方向
 
     for(int i = 0; i < next_state.size(); ++i) {
       int g2 = next_state[i].g;
@@ -149,7 +153,7 @@ HBF::maze_path HBF::search(vector< vector<int> > &grid, vector<double> &start,
         // invalid cell
         continue;
       }
-
+      //stack2范围是多少？
       int stack2 = theta_to_stack_number(theta2);
 
       if(closed[stack2][idx(x2)][idx(y2)] == 0 && grid[idx(x2)][idx(y2)] == 0) {

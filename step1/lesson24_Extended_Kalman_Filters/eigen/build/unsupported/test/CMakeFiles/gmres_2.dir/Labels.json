@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/leon/work/myHub/udacity-project/step1/lesson24_Extended_Kalman_Filters/eigen/unsupported/test/gmres.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildUnsupported"
+		],
+		"name" : "gmres_2"
+	}
+}

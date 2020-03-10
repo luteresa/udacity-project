@@ -33,7 +33,7 @@ class HBF {
 
   int idx(double float_num);
 
-  vector<maze_s> expand(maze_s &state);
+  vector<maze_s> expand(maze_s &state, vector<int> &goal);
 
   vector<maze_s> reconstruct_path(vector<vector<vector<maze_s>>> &came_from, 
                                   vector<double> &start, HBF::maze_s &final);
