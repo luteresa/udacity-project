@@ -1,0 +1,19 @@
+安装TensorFlow
+
+
+至少是Python3.5   不支持Python2.x
+
+建议安装Anaconda
+
+
+pip install tensorflow
+
+pip install tensorflow-gpu
+
+windows、macOS和linux
+
+pip uninstall tensorflow
+
+
+
+

@@ -1,0 +1,15 @@
+TensorFlow是一个用于训练深度学习模型的强大开源软件库，由Google Brain小组推出。
+基本原理是定义一个用来计算的图（可以简称为计算图），然后TensorFlow就会使用这个图进行运算，最后输出运算结果。
+尽管TensorFlow使用的是Python语言，但底层使用C++语言开发，Python只是做了一层接口而已。
+
+TensorFlow实现分布式计算。
+
+TensorFlow特点：
+1. 跨平台的（Windows、Linux、macOS）
+2. 提供了TF.learn来兼容sk-learn，TF.learn是从Scikit-flow（sk-flow）演化过来的
+3. 提供了TF-Slim库简化神经网络的构建、训练和评估
+4. 在TensorFlow之上，建立了很多独立的库，如Keras。
+5. 通过TensorFlow API，可以非常灵活地创建任何你能想到的神经网络架构。
+6. 包含了很多高校的，使用C++实现的机器学习API。特别是用来构建神经网络的API。
+7. 提供了一个而非常强大的称为TensorBoard的可视化工具，可以用来浏览计算图，查看学习曲线
+
